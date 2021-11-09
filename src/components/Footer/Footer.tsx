@@ -1,8 +1,8 @@
-import styled from "styled-components";
 import React from 'react';
 import banner from "../../assets/banner.png";
 import ipfs from "../../assets/ipfs.png";
 import pinata from "../../assets/pinata.png";
+import styled from "styled-components";
 
 const Main = styled.div`
   display: flex;

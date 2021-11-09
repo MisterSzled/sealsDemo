@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from 'react';
 import logo from "../../assets/logo.png"
-import {Button} from "../index";
+import {Button} from "../index"
 
 const Main = styled.div`
   display: flex;

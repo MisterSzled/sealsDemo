@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React from 'react';
 import backButton from "../../assets/backButton.png"
 import {SealImage, SealDetails} from "../index";
 import exampleSealJSON from "../../assets/exampleSeal.json";

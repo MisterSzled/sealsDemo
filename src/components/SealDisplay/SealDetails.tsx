@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from 'react';
+import {SealType} from "../../types";
 import ipfsLogo from "../../assets/ipfsLogo.png"
 import {Button} from "../index";
 
@@ -53,7 +53,11 @@ const DetailPair = styled.div`
   justify-content: space-between;
 `;
 
-export const SealDetails = (props) => 
+interface SealDetailsProps {
+  seal: SealType
+}
+
+export const SealDetails = (props: SealDetailsProps) => 
     <InfoDisplay>
         <SaleDisplay>
             <SaleHeader>SEAL - {props.seal.token_id}</SaleHeader>
@@ -78,14 +82,14 @@ export const SealDetails = (props) =>
                 </DetailPair>
                 <DetailPair>
                 <span>Background Type:</span>
-                <span style={{"text-transform": "uppercase"}}>{props.seal.backgroundType}</span>
+                <span style={{textTransform: "uppercase"}}>{props.seal.backgroundType}</span>
                 </DetailPair>
                 <DetailPair>
                 <span>Background:</span>
                 <span style={{"color": props.seal.background}}>{props.seal.background}</span>
                 </DetailPair>
             </DetailLines>
-            <Button type={"gilded"} colorOverride={"#DAC17D"}>SEE ON IPFS<img src={ipfsLogo}/></Button>
+            <Button type={"gilded"} colorOverride={"#DAC17D"}>SEE ON IPFS<img alt={"ipfsLogo"} src={ipfsLogo}/></Button>
         </DetailDisplay>
     </InfoDisplay>
 

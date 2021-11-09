@@ -1,15 +1,21 @@
 {
-  "name": "sealsDemo",
+  "name": "sealsdemo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.0",
-    "styled-components": "^5.2.1",
+    "@types/jsdom": "^16.2.13",
+    "@types/node": "^16.11.7",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "styled-components": "^5.3.0",
+    "typescript": "^4.4.4",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

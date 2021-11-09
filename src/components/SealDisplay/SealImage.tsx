@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import React from 'react';
-
+import {SealType} from "../../types";
 import sealHeader from "../../assets/sealHeader.png"
 import tagBackground from "../../assets/tagBackground.png"
 
@@ -44,7 +43,7 @@ const SealImageBody = styled.div`
   overflow: hidden;
   position: relative;
   &:hover .slideUp {
-    bottom: 1.5%;
+    bottom: 1%;
   }
 `;
 const SealImageInner = styled.div`
@@ -73,7 +72,7 @@ const SealDetail = styled.div`
   align-items: center;
 
   &:hover {
-    bottom: 1.5%;
+    bottom: 1%;
   }
 `;
 const IndexTag = styled.div`
@@ -98,7 +97,12 @@ const IndexSpan = styled.span`
   margin-top: 2px;
 `;
 
-export const SealImage = (props) => 
+interface SealImageProps {
+  sealImg: any,
+  seal: SealType
+}
+
+export const SealImage = (props: SealImageProps) => 
             <ImageBody>
               <SealHeader>
                 <SealHeaderImg src={sealHeader}/>

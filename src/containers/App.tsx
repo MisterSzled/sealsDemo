@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import React from 'react';
-import {Header, SealDisplay, Footer} from "../components/index.js";
+import {Header, SealDisplay, Footer} from "../components/index";
 
 const MainBody = styled.div`
   width: 100%;
